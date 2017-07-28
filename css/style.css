@@ -6,7 +6,7 @@
   margin: auto;
   width: 800px;
   height: 450px;
-  background-color: rgb(234, 202, 252);
+  background-color: #f4f1e1;
   margin-top: 50px;
 }
 .internal-frame {
@@ -15,12 +15,12 @@
   display: flex;
 }
 .svg {
+  position: absolute;
   width: 400px;
   height: 450px;
-  background-color: rgb(250, 235, 255);
 }
 .text-frame {
-  background-color: rgb(194, 177, 164);
+  background-color: #f4f1e1;
   width: 400px;
   height: 450px;
   display: flex;
@@ -33,7 +33,7 @@
   position: relative;
   width: 380px;
   height: 70px;
-  background-color: rgb(245, 213, 118);
+  background-color: #9c80bc;
   top: -40px;
   left: 200px;
   margin-bottom: -80px;
@@ -43,6 +43,7 @@
   text-align: center;
   justify-content: center;
   border-radius: 18px;
+  z-index: 5;
 }
 .sub-text {
   width: 80%;
@@ -72,13 +73,13 @@ hr {
 
 p {
   font-family: 'Lato', sans-serif;
-  color: rgb(64, 54, 45);
+  color: rgb(52, 52, 52);
 }
 
 .title-frame > p {
   font-weight: bold;
   font-size: 28px;
-  color: rgb(64, 54, 45);
+  color: rgb(255, 255, 255);
 }
 
 .logo-frame{
@@ -95,7 +96,76 @@ p {
   justify-content: center;
   border-radius: 18px;
 }
-
 .logo {
   padding: 30px;
+}
+
+
+.ConductosRelleno {
+  fill: rgb(194, 131, 217) ;
+  opacity: 0;
+  cursor: pointer;
+  transition: fill 1.5s, opacity 1.5s;
+}
+.ConductosRelleno:hover {
+  fill: rgb(234, 200, 249) ;
+  opacity: 0.5 ;
+}
+.conductos-leche {
+  fill: rgb(255, 255, 255) !important;
+  opacity: 1;
+  transition: fill 2s !important;
+}
+
+.ligamentos {
+  fill: rgba(255, 255, 255, 0);
+  opacity: 0;
+  cursor: pointer;
+  transition: fill 0.2s, opacity 0.2s;
+}
+.ligamentos:hover {
+  fill: #f6f3e9 !important;
+  opacity: 0.5 !important;
+}
+
+.areola {
+  fill: rgba(255, 255, 255, 0);
+  opacity: 0;
+  cursor: pointer;
+  transition: fill 0.2s, opacity 0.2s;
+}
+.areola:hover {
+  fill: #cfc6ba !important;
+  opacity: 0.5 !important;
+}
+
+.musculo {
+  fill: rgba(255, 255, 255, 0);
+  opacity: 0;
+  cursor: pointer;
+  transition: fill 0.2s, opacity 0.2s;
+}
+.musculo:hover {
+  fill: #fc9a99 !important;
+  opacity: 0.5 !important;
+}
+
+.adiposo {
+  fill: rgba(255, 255, 255, 0);
+  opacity: 0;
+  cursor: pointer;
+  transition: fill 0.2s, opacity 0.2s;
+}
+.adiposo:hover {
+  fill: #ffa482 !important;
+  opacity: 0.5 !important;
+}
+
+.alveolos {
+  fill: #9c80bc !important;
+  cursor: pointer;
+  transition: fill 0.2s;
+}
+.alveolos:hover {
+  fill: #a990c6 !important;
 }
